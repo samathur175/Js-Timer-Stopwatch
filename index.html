@@ -6,16 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Css Stylesheet Link -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Bottstrap CDN link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <title>Js-Timer/Stop-Watch</title>
   </head>
   <body>
-    <div class="main-div">
-      <div class="timer">
-        <h3>Timer</h3>
+    <h2 class="main-heading">Stop-Watch</h2>
+    <div class="clock-div" id="clock-div">
+      <div>
+        <h2 id="hour" class="hour">00</h2>
+        <h4>Hour's</h4>
       </div>
-      <div class="stop-watch">
-        <h3>Stop-Watch</h3>
+      <div>
+        <h2 id="minute" class="minute">00</h2>
+        <h4>Minute's</h4>
       </div>
+      <div>
+        <h2 id="second" class="second">00</h2>
+        <h4>Second's</h4>
+      </div>
+    </div>
+    <div class="btns">
+      <button type="button" class="btn btn-primary start-btn">Start</button>
+      <button type="button" class="btn btn-secondary stop-btn">Stop</button>
+      <button type="button" class="btn btn-info reset-tn">Reset</button>
     </div>
   </body>
 </html>
